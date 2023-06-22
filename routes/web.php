@@ -63,7 +63,7 @@ Route::middleware(['guest'])->group(function(){
   Route::get('/signup', [SignUpController::class, 'showRegistrationForm'])->name('signup');
   Route::post('/signup', [SignUpController::class, 'signup']);
 
-
+  });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
